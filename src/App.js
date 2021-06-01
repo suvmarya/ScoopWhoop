@@ -6,7 +6,6 @@ import Spotlight from './Components/Spottlight';
 import Stories from './Components/Stories';
 import Trending from './Components/Trending';
 import Videos from './Components/Videos';
-// import Navbar from "./Components/Navbar";
 import Navbar from "./Navbar/Navbar";
 import SignIn from "./Navbar/SignIn";
 import Allcategory from './Navbar/Allcategory';

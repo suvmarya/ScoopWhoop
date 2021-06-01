@@ -12,7 +12,7 @@ const Card = (props) => {
                     <div className="card-title">
                         <NavLink to="#" activeClassName="active">{props?.title}</NavLink>
                     </div>
-                    <div className="card-heading">
+                    <div className="card-heading"> 
                         <NavLink to="#" activeClassName="active"><h4>{props?.heading}</h4></NavLink>
 
                     </div>

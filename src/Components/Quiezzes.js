@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 
 const Quiezzes = () => {
     return (
@@ -13,7 +13,8 @@ const Quiezzes = () => {
                         <h1>16 Fan Favourite Cult Movies That You Didn't Know Were Copied</h1>
                     </div>
                     <div className="last-btn">
-                        <a href="#">Read More</a>
+                        <NavLink to="#" activeClassName="active">Read More</NavLink>
+
                     </div>
                 </div>
             </div>

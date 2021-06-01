@@ -1,5 +1,4 @@
 import React from "react";
-import Freshapi from "./Freshapi";
 const Meme = () => {
     return (
         <>

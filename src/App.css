@@ -564,7 +564,7 @@ li.menu-item {
   background: linear-gradient(
 136.04deg
 ,#1b91ff -.78%,#9f49e3 92.66%) no-repeat;
-  -webkit-background-clip: text !important;
+  background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   margin-left: 1em;
 }
@@ -656,6 +656,68 @@ li.menu-item {
   width: 100%;
   height: 80vh;
 }
+  /* Loading CSS */
+  .circle-loading {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    right: 46%;
+}
+svg.circle-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+svg.circle-svg {
+  width: 50px;
+  animation: 2s linear infinite both circle__svg;
+}
+.circle__svg-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  animation: 1.4s ease-in-out infinite both circle__svg-circle !important;
+  fill: transparent;
+  stroke: #2d7bec;
+  stroke-dasharray: 285 !important;
+  stroke-linecap: round;
+  stroke-width: 1px;
+  transform-origin: 50% 50%;
+}
+span.loading-text {
+  font-size: 15px;
+  font-family: Roboto,sans-serif;
+  color: #2d7bec;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+@keyframes circle__svg-circle{
+  0%, 25% {
+    stroke-dashoffset: 280;
+    transform: rotate(0);
+}
+50%, 75% {
+  stroke-dashoffset: 75;
+  transform: rotate(45deg);
+}
+100% {
+  stroke-dashoffset: 280;
+  transform: rotate(360deg);
+}
+}
+
 
 
 @media screen and (max-width: 600px) {
